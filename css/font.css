@@ -4,3 +4,9 @@
     font-weight: bold;
     font-style: normal;
 }
+@font-face {
+    font-family: 'dropdown-font';
+    src: url('source-sans-pro.extralight.ttf');
+    font-weight: bold;
+    font-style: normal;
+}
