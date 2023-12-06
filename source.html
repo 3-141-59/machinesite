@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Iosmetric testing</title>
+        <link rel="stylesheet" href="C:\Users\georg\Documents\websiteTesting\isometric-test\css\font.css">
+    </head>
+<script>
+    const username="georged";
+    const password="123";
+    
+    function matchInputInfo() {
+            if(document.getElementById("username").value == username && document.getElementById("password").value == password) {
+                    alert("Redirecting...");
+                } else {
+                       var incorrectMsg = document.getElementById("incorrect-input");
+                        incorrectMsg.style.opacity=1;
+                        
+                        setTimeout(function() {
+                                incorrectMsg.style.opacity=0;
+                            }, 5000)
+                    }
+        }
+</script>
+<style>
+body {
+    background-color: #F0F0F0;
+    display: flex;
+            flex-direction: column;
+            justify-content: center; 
+            align-items: center; 
+            min-height: 100vh;
+}
+.isometric-room {
+}
+@font-face {
+    font-family: 'machinesite-font';
+    src: url('coolvetica.rg-regular.otf');
+    font-weight: bold;
+    font-style: normal;
+}
+
+#welcome-msg {
+    font-family: machinesite-font;
+    font-size: 60px;
+    line-height: 45px;
+}
+.machinesite-logo {
+    outline: none;
+}
+.footer-info-text {
+    font-size: 30px;
+}
+.footer-info-text {
+    font-size: 40px;
+    font-family: machinesite-font;
+}
+.machinesite-text {
+    padding-bottom: 20px;
+    font-family: machinesite-font;
+    font-size: 100px;
+}
+.line-split {
+    height: 1px;
+    width: 750px;
+    background-color: black;
+    border-radius: 25px;
+    margin-top: 10px;
+}
+.logo {
+    padding-top: 30px;
+}
+.username-input {
+    font-family: monospace;
+    padding: 10px;
+    outline: none;
+    border-width: 0;
+    font-size: 20px;
+    border-radius: 5px;
+}
+#gap {
+    padding-left: 10px;
+}
+.password-input {
+    font-family: monospace;
+    padding: 10px;
+    outline: none;
+    border-width: 0;
+    font-size: 20px;
+    border-radius: 5px;
+}
+.login-button {
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 60px;
+    font-family: machinesite-font;
+    border-width: 0;
+    background-color: #0068FF;
+    color: white;
+    border-radius: 5px;
+    transition-duration: 1s;
+    cursor: pointer;
+    font-size: 25px;
+}
+.login-button:hover {
+    filter: drop-shadow(5px 5px 10px #C5C5C5);
+}
+#incorrect-input {
+    font-family: monospace;
+    color: #FF4B4B;
+    opacity: 0; /*DEFAULT VALUE*/
+    transition: opacity 0.4s ease;
+}
+</style>
+    <body>
+        <div class="isometric-room">
+        <table style="margin-left:0">
+            <tr> 
+                    <th class="footer-info-text"><img src="machinesite.svg" width="140px;"></th>
+                    <th class="machinesite-text"><span class="machinesite-text">MachineSite</span></th>
+            </tr>
+        </table>
+            <table>
+            <tr>
+                <td id="welcome-msg"><div class="line-split"></div></td>
+            </tr>
+        </table>
+        <div class="logo">
+            <table>
+                <tr>
+                </tr>
+            </table>
+            <table style="margin-top:20px;">
+                <tr>
+                    <div class="login">
+                        <th><input class="username-input" id="username" placeholder="username"></th>
+                    </div>
+                    <th>
+                        <input class="password-input" id="password" placeholder="password">
+                    </th>
+                    <th id="gap"></th>
+                    <th><button onclick="matchInputInfo()" class="login-button">Log in<img src="arrow-white.svg" width="15px" style="margin-left:10px;"></button></th>
+                </tr>
+            </table>
+            <p id="incorrect-input">Incorrect username or password</p>
+        </div>
+        </div>
+    </body>
+</html>

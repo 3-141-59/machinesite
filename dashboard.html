@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MachineSite</title>
+        <link rel="stylesheet" href="C:\Users\georg\Documents\websiteTesting\isometric-test\css\font.css">
+    </head>
+<style>
+body {
+    margin: 0;
+    font-family: machinesite-font;
+}
+.logo {
+    display: flex;
+    padding: 20px;
+    background-color: #F4F4F4;
+    margin-bottom: 10px;
+}
+.logo h1 {
+    margin-top: 10px;
+    font-size: 50px;
+    padding-left: 5px;
+}
+.welcome-user {
+    display: flex;
+    height: 85vh;
+    width: 15%;
+    margin: 0px;
+    border-radius: 20px;
+    background-color: #006CFF;
+    
+    filter: drop-shadow(5px 5px 10px #EBEBEB);
+}
+.machinesite-logo-container {
+    display: inline-block;
+}
+.below-navbar {
+    display: flex;
+}
+.building-viewport {
+    display: inline-block;
+    width: 100%;
+}
+.test-shape {
+    margin-left: 10px;
+    height: 80vh;
+    width: 100%;
+    filter: drop-shadow(5px 5px 10px #0047A3);
+}
+.test-shape iframe {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+    border-radius: 25px;
+}
+.project-name {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    margin-top: 10px;
+    border-radius: 25px;
+    background-color: white;
+    filter: drop-shadow(5px 5px 10px #EBEBEB);
+}
+.building-viewport-footer-table button {
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: machinesite-font;
+    border-width: 0;
+    background-color: #006CFF;
+    color: white;
+    font-size: 20px;
+    border-radius: 5px;
+}
+.float-test {
+    width: 20%;
+    height: 85vh;
+    background-color: #006CFF;
+    margin-left:20px;
+    border-radius: 25px;
+    filter: drop-shadow(5px 5px 10px #EBEBEB);
+}
+#edit-button {
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 20px;
+    border-width: 0;
+    background-color: #006CFF;
+    font-family: machinesite-font;
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.navbar {
+    position: absolute;
+    right: 0;
+    padding-top: 10px;
+    padding-right: 50px;
+    
+}
+.resources-button {
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: machinesite-font;
+    font-size: 20px;
+    border: none;
+    background: none;
+}
+.background-dropdown-container {
+    width: 100%;
+    height: 50px;
+    background-color: #006CFF;
+    border-radius: 5px;
+    filter: drop-shadow(5px 5px 10px #0057CD);
+    font-size: 10px;
+    display: flex;
+    flex: row;
+    color: #003986;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.background-dropdown-container h1 {
+    padding-right:10px;
+}
+#navbar-dropdown-button {
+    width: 100%;
+    height: 50px;
+    background-color: #006CFF;
+    border-radius: 5px;
+    filter: drop-shadow(5px 5px 10px #0057CD);
+    font-size: 20px;
+    display: flex;
+    flex: row;
+    color: #003986;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 10px;
+    background: none;
+    border-width: 0;
+    font-family: machinesite-font;
+}
+.Header {
+    width: 100%;
+    height: 50px;
+    background-color: #006CFF;
+    border-radius: 5px;
+    font-size: 10px;
+    display: flex;
+    flex: row;
+    justify-content: center;
+    cursor: pointer;
+    filter: drop-shadow(5px 5px 10px #0057CD);
+    color:  #003986;
+}
+.Header h1 {
+    padding-right:10px;
+}
+.add-container {
+     width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    filter: drop-shadow(5px 5px 10px #0057CD);
+    font-size: 10px;
+    display: flex;
+    flex: row;
+    justify-content: center;
+    cursor: pointer;
+    color: #0060DE;
+}
+.navbar-edit-dropdown {
+    width: 100%;
+    height: 200px;
+    border-radius: 5px;
+    font-size: 10px;
+    display: flex;
+    flex: row;
+    justify-content: left;
+    color: #D9D9D9;
+    background-color: #0064E8;
+
+    display: none;
+}
+
+.drop-down-contents-navbar {
+    padding-left: 10px;
+    color: black;
+}
+.button-settings  {
+    border: none;
+    background: none;
+    opacity: 1;
+    transition-duration: 0;
+    cursor: pointer;
+}
+.Buttons-underline {
+    width: 100%;
+    height: 2px;
+    background-color: #006CFF;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+</style>
+    <body>
+        <div class="logo">
+            <div class="machinesite-logo-container">
+            <img src="root-images/machinesite.svg" width="70px;">
+        </div>
+            <h1>MachineSite</h1>
+            <div class="navbar">
+            <table>
+                <tr>
+                    <th><button class="resources-button">Support</button></th>
+                    <th><button class="resources-button">Resources</button></th>
+                    <th><button class="resources-button"><img src="profile-icon.svg" width="80px"></button></th>
+                </tr>
+            </table>
+            </div>
+        </div>
+        <div class="below-navbar">
+                   <div class="welcome-user"></div>
+            <div class="building-viewport">
+                <div class="test-shape">
+                    <iframe src="source.html" frameborder="0" allowfullscreen></iframe>
+                    <div class="project-name">
+                        <p style="padding-left:20px; text-align: right;">Machinesite Login Page</p>       
+                        <button id="edit-button">Edit</button>
+                    </div>
+                </div>
+            </div>
+        <div class="float-test">
+            <div class="background-dropdown-container">
+                <h1>Background</h1>
+                <img src="arrow-black.svg" width="10px;">
+            </div>
+            <div class="Header">
+                <h1>Header</h1>
+                <img src="arrow-black.svg" width="10px;">
+            </div>
+             <div class="background-dropdown-container">
+                 <h1 onclick="reveal-dropdown()"><button id="navbar-dropdown-button">Navbar</button></h1>
+                <img src="arrow-black.svg" width="10px;">
+            </div>
+            <div id="navbar-dropdown" class="navbar-edit-dropdown">
+                <div class="drop-down-contents-navbar">
+                    <h1>Buttons</h1>
+                    <div class="Buttons-underline"></div>
+                    <table>
+                        <tr>
+                            <div class="button-settings-container">
+                                    <td><button class="">Button1</button></td>
+                                        <td><button class="button-settings"><img src="settings.svg" width="20px"></td>
+                                        <td><button class="button-settings"><img src="minus.svg" width="20px" style="padding-bottom:5px;"></td>
+                            </div>
+                        </tr>
+                        <tr>
+                            <td><button>Button1</button></td>
+                        </tr>    
+                            <td><button>Button1</button></td>
+                        <tr>    
+                            <td><button>Button1</button></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+           <div class="add-container">
+                <img src="plus.svg" width="10px;">
+                <h1>Add</h1> 
+           </div> 
+        </div>
+    </body>
+    <script>
+        document.getElementById('navbar-dropdown-button').addEventListener('click', function() {
+        var myDiv = document.getElementById('navbar-dropdown');
+        myDiv.style.display = (myDiv.style.display === 'none' || myDiv.style.display === '') ? 'block' : 'none';
+    });
+
+    </script>
+</html>
